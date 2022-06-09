@@ -1,4 +1,5 @@
 test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+Let's create a table in test database with employee name column information id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100).
 
 CREATE TABLE employee (
 id INTEGER,
@@ -8,6 +9,7 @@ id INTEGER,
 );
 
 Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+Let's add 50 pieces of data to the employee table we created using the 'Mockaroo' service.
 
 insert into employee (name, email, birthday) values ('Lynna', null, null);
 insert into employee (name, email, birthday) values ('Adel', 'ayoxall1@princeton.edu', '1938/07/14');
@@ -61,6 +63,7 @@ insert into employee (name, email, birthday) values ('Rodrigo', null, null);
 insert into employee (name, email, birthday) values ('Hakim', 'hmckay1d@google.nl', '1982/06/16');
 
 Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+Let's do 5 UPDATE operations that will update the other columns
 
 
 UPDATE employee
@@ -96,6 +99,7 @@ birthday = 'PPPP-PP-PP'
 WHERE birthday LIKE '1982%';
 
 Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+Let's do 5 DELETE operations that will delete the related row according to each of the columns.
 
 DELETE FROM employee
 WHERE id = 40
