@@ -24,4 +24,4 @@ city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
 How many of the city names in the city table end with the character 'R' or r?
 
 SELECT COUNT (city)FROM city
-WHERE city ILIKE 'R%';
+WHERE city ILIKE '%R';
